@@ -1,5 +1,9 @@
-(load-theme 'lush t)
+(use-package monokai-theme
+	     :ensure t)
+(load-theme 'monokai t)
+;; (load-theme 'lush t)
 
+;; disable menu bar
 (menu-bar-mode -1)
 
 (require 'ansi-color)

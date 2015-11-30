@@ -9,6 +9,7 @@
 (add-to-list 'load-path' "~/.emacs.d/config")
 (require 'ai-core)
 (require 'ai-keys)
+(require 'smart-beginning-of-line)
 (require 'ai-mouse)
 (require 'ui)
 (require 'completion)

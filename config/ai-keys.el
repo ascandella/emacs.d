@@ -1,6 +1,7 @@
 ;; better m-x
 (global-set-key (kbd "M-x") 'helm-M-x)
 
+;; enable c-u and c-d scrolling like vim
 (setq evil-want-C-u-scroll t)
 
 (require 'evil-leader)
