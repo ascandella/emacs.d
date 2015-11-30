@@ -7,17 +7,17 @@
 
 (use-package evil-leader
   :ensure t
-  :init
+  :config
   (global-evil-leader-mode))
 
 (use-package evil
   :ensure t
-  :init
+  :config
   (evil-mode 1))
 
 (use-package evil-surround
   :ensure t
-  :init
+  :config
   (global-evil-surround-mode 1))
 
 ;; from spacemacs
