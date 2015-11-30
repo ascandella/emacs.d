@@ -5,6 +5,21 @@
 ;; enable c-u and c-d scrolling like vim
 (setq evil-want-C-u-scroll t)
 
+(defun pbpaste ()
+  (interactive)
+  (call-process-region (point) (if mark-active (mark) (point)) "pbpaste" t t))
+
+(defun tell-emacsclients-for-buffer-to-die ()
+  "Sends error exit command to every client for the current buffer."
+  (interactive)
+  (dolist (proc server-buffer-clients)
+    (server-send-string proc "-error die")))
+
+(defun shift-width (width)
+  (interactive "n")
+  (set-variable 'evil-shift-width width)
+  (message "set shift width to %d" width))
+
 (use-package evil-leader
   :ensure t
   :config

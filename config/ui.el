@@ -1,6 +1,8 @@
 (use-package monokai-theme
-	     :ensure t)
-(load-theme 'monokai t)
+  :ensure t
+  :config
+  (load-theme 'monokai t))
+
 ;; (load-theme 'lush t)
 
 ;; disable menu bar
