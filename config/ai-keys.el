@@ -5,15 +5,14 @@
 (setq evil-want-C-u-scroll t)
 
 (use-package evil-leader
-  :ensure t)
-
-(global-evil-leader-mode)
+  :ensure t
+  :init
+  (global-evil-leader-mode))
 
 (use-package evil
   :ensure t
   :init
-  (evil-mode 1)
-  )
+  (evil-mode 1))
 
 (use-package evil-surround
   :ensure t
