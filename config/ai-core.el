@@ -1,7 +1,7 @@
 ;; disable annoying tilde-files
 (setq
  make-backup-files nil
- )
+ inhibit-startup-message t)
 
 (eval-when-compile
   (require 'use-package)

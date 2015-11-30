@@ -14,6 +14,7 @@
 		    :foreground "#282a2e")
 
 (when window-system
+  (tool-bar-mode -1)
   (setq-default dotspacemacs-default-font '(:size 14)))
 
 ;; (global-linum-mode)
