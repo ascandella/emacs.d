@@ -14,5 +14,6 @@
 (require 'ui)
 (require 'completion)
 (require 'ai-projectile)
+(require 'pbcopy)
 
 (require 'languages)
