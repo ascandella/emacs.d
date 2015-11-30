@@ -3,4 +3,6 @@
  make-backup-files nil
  )
 
+(add-hook 'after-init-hook #'global-flycheck-mode)
+
 (provide 'ai-core)

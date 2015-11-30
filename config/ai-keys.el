@@ -1,6 +1,8 @@
 ;; better m-x
 (global-set-key (kbd "M-x") 'helm-M-x)
 
+(setq evil-want-C-u-scroll t)
+
 (require 'evil-leader)
 (global-evil-leader-mode)
 
