@@ -4,11 +4,21 @@
 ;; enable c-u and c-d scrolling like vim
 (setq evil-want-C-u-scroll t)
 
-(require 'evil-leader)
+(use-package evil-leader
+  :ensure t)
+
 (global-evil-leader-mode)
 
-(require 'evil)
-(evil-mode 1)
+(use-package evil
+  :ensure t
+  :init
+  (evil-mode 1)
+  )
+
+(use-package evil-surround
+  :ensure t
+  :init
+  (global-evil-surround-mode 1))
 
 ;; from spacemacs
 (define-key global-map (kbd "RET") 'newline-and-indent)
