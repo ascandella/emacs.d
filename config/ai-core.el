@@ -1,9 +1,8 @@
 ;; disable annoying tilde-files
 (setq
  make-backup-files nil
- inhibit-startup-message t
- inhibit-startup-echo-area-message t
- inhibit-splash-screen t)
+ inhibit-startup-screen t
+ inhibit-startup-echo-area-message t)
 
 (fset 'yes-or-no-p 'y-or-n-p)
 
