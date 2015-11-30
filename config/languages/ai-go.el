@@ -4,12 +4,12 @@
 
 (defun my-go-mode-hook ()
   (whitespace-mode -1) ; don't highlight hard tabs
+  (add-hook 'before-save-hook #'gofmt-before-save)
   (setq
    tab-width 2         ; display tabs as two-spaces
    indent-tabs-mode 1  ; use hard tabs to indent
    fill-column 100))   ; set a reasonable fill width
 
-; (add-hook 'before-save-hook #'gofmt-before-save)
 (add-hook 'go-mode-hook 'my-go-mode-hook)
 
 (defun go-display-cover-out ()
