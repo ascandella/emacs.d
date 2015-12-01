@@ -7,6 +7,8 @@
 
 ;; disable menu bar
 (menu-bar-mode -1)
+;; disable scroll bar
+(scroll-bar-mode -1)
 
 (require 'ansi-color)
 (setq-default fill-column 80)

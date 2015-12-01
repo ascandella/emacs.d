@@ -17,4 +17,8 @@
 
 (setq dired-use-ls-dired nil)
 
+;; ensure path is configured properly
+(use-package exec-path-from-shell
+  :ensure t)
+
 (provide 'ai-core)

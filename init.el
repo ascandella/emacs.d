@@ -15,5 +15,6 @@
 (require 'completion)
 (require 'ai-projectile)
 (require 'pbcopy)
+(require 'ai-sublimity)
 
 (require 'languages)
