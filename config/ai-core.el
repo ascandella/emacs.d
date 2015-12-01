@@ -4,6 +4,8 @@
  inhibit-startup-screen t
  inhibit-startup-echo-area-message t)
 
+(defun display-startup-echo-area-message ())
+
 (fset 'yes-or-no-p 'y-or-n-p)
 
 (eval-when-compile
