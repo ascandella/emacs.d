@@ -2,5 +2,6 @@
 
 (require 'ai-go)
 (require 'ai-puppet)
+(require 'ai-markdown)
 
 (provide 'languages)
