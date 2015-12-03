@@ -5,6 +5,12 @@
 ;; enable c-u and c-d scrolling like vim
 (setq evil-want-C-u-scroll t)
 
+(defun go-to-reviewers()
+  (interactive)
+  "Go to reviewers section of `arc diff`"
+  (search-forward "Reviewers:")
+  (evil-append-line 1))
+
 (defun pbpaste ()
   (interactive)
   (call-process-region (point) (if mark-active (mark) (point)) "pbpaste" t t))
@@ -76,6 +82,10 @@
   "-" 'evilnc-comment-or-uncomment-lines
   "2" (lambda () (interactive) (shift-width 2))
   "4" (lambda () (interactive) (shift-width 4)))
+
+(define-key evil-motion-state-map "gr" 'go-to-reviewers)
+
+(global-set-key (kbd "C-c v") 'pbpaste)
 
 (provide 'ai-keys)
 ;;; ai-keys.el ends here
