@@ -2,6 +2,8 @@
 
 (setq gofmt-command "goimports")
 
+(setq-default golang-test-command "make -k test")
+
 (defun my-go-mode-hook ()
   (whitespace-mode -1) ; don't highlight hard tabs
   (add-hook 'before-save-hook #'gofmt-before-save)
@@ -24,7 +26,7 @@
 (defun golang-compile-and-coverage ()
   "Compile with coverage."
   (interactive)
-  (generic-go-test-and-coverage "make -k test"))
+  (generic-go-test-and-coverage 'golang-test-command))
 
 (defun golang-test-and-coverage ()
   "Compile with coverage."

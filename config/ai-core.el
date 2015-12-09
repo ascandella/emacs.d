@@ -21,7 +21,14 @@
 
 ;; ensure path is configured properly
 (use-package exec-path-from-shell
-  :ensure t)
+  :ensure t
+  :init
+  (setq exec-path-from-shell-check-startup-files nil)
+  :config
+  (progn
+    (when (memq window-system '(mac ns))
+      (exec-path-from-shell-initialize))
+    (exec-path-from-shell-copy-env "GOPATH")))
 
 (use-package helm
   :ensure t)
