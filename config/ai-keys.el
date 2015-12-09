@@ -41,6 +41,12 @@
   :config
   (global-evil-surround-mode 1))
 
+(use-package helm-swoop
+  :ensure t
+  :config
+  (evil-leader/set-key "h" 'helm-swoop))
+
+
 ;; from spacemacs
 (define-key global-map (kbd "RET") 'newline-and-indent)
 ;; (electric-indent-mode +1)
@@ -69,7 +75,6 @@
   "a" 'projectile-ag
   "p" 'toggle-pbcopy
   "cd" 'cd
-  "h" 'helm-swoop
   "r" 'select-paragraph
   "." 'vi-line-above
   "'" 'vi-line-below
