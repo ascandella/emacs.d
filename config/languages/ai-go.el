@@ -45,6 +45,4 @@
 (evil-leader/set-key-for-mode 'go-mode
     "l" 'golang-test-and-coverage)
 
-(setenv "GOPATH" "/Users/aiden/src/go")
-
 (provide 'ai-go)
