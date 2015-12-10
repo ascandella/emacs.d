@@ -3,6 +3,7 @@
 (require 'ai-go)
 (require 'ai-puppet)
 (require 'ai-markdown)
+(require 'ai-terraform)
 (require 'go-tmpl)
 
 (provide 'languages)
