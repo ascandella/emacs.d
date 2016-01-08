@@ -2,7 +2,8 @@
 (setq
  make-backup-files nil
  inhibit-startup-screen t
- inhibit-startup-echo-area-message t)
+ inhibit-startup-echo-area-message t
+ require-final-newline t)
 
 (defun display-startup-echo-area-message ())
 
