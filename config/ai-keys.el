@@ -2,8 +2,11 @@
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 
-;; enable c-u and c-d scrolling like vim
-(setq evil-want-C-u-scroll t)
+(setq
+ ;; enable c-u and c-d scrolling like vim
+ evil-want-C-u-scroll t
+ ;; count symbols (e.g. _) as part of words for * next-word search
+ evil-symbol-word-search t)
 
 (defun go-to-reviewers()
   (interactive)
