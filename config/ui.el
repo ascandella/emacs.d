@@ -20,7 +20,7 @@
   (tool-bar-mode -1)
   ;; disable scroll bar
   (scroll-bar-mode -1)
-  (setq-default dotspacemacs-default-font '(:size 14)))
+  (set-default-font "Menlo-14"))
 
 ;; (global-linum-mode)
 
