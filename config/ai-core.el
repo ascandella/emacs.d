@@ -3,7 +3,8 @@
  make-backup-files nil
  inhibit-startup-screen t
  inhibit-startup-echo-area-message t
- require-final-newline t)
+ require-final-newline t
+ vc-follow-symlinks t)
 
 (defun display-startup-echo-area-message ())
 
