@@ -18,6 +18,7 @@
   :ensure t)
 
 (add-hook 'after-init-hook #'global-flycheck-mode)
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (setq dired-use-ls-dired nil)
 
