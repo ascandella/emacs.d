@@ -26,6 +26,14 @@
 
 
 (add-to-list 'mu4e-bookmarks
+	     '("flag:unread AND NOT flag:trashed AND date:today..now AND NOT maildir:/gmail/sent"
+               "Today's unread messages"
+               ?m))
+(add-to-list 'mu4e-bookmarks
+	     '("maildir:/gmail/inbox"
+               "Inbox"
+               ?i))
+(add-to-list 'mu4e-bookmarks
             '("size:5M..500M"       "Big messages"     ?b))
 
 
