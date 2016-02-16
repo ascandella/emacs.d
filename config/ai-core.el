@@ -4,7 +4,10 @@
  inhibit-startup-screen t
  inhibit-startup-echo-area-message t
  require-final-newline t
- vc-follow-symlinks t)
+ vc-follow-symlinks t
+ backup-directory-alist `(("." . "~/.saves"))
+ backup-by-copying-when-linked t
+ )
 
 (defun display-startup-echo-area-message ())
 
