@@ -13,6 +13,7 @@
 
     (add-to-list 'load-path' "~/.emacs.d/config")
     (require 'ai-core)
+    (require 'ai-git)
     (require 'ai-keys)
     (require 'ai-kwm)
     (require 'ai-mail)
