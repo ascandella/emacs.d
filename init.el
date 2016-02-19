@@ -13,8 +13,8 @@
 
     (add-to-list 'load-path' "~/.emacs.d/config")
     (require 'ai-core)
-    (require 'ai-git)
     (require 'ai-keys)
+    (require 'ai-git) ;; needs to come after keys so we load evil later
     (require 'ai-kwm)
     (require 'ai-mail)
     (require 'smart-beginning-of-line)
