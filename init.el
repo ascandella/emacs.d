@@ -14,6 +14,7 @@
     (add-to-list 'load-path' "~/.emacs.d/config")
     (require 'ai-core)
     (require 'ai-keys)
+    (require 'ai-kwm)
     (require 'ai-mail)
     (require 'smart-beginning-of-line)
     (require 'ai-mouse)
@@ -31,6 +32,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(menu-bar-mode nil)
  '(safe-local-variable-values
    (quote
     ((eval setq golang-test-command
