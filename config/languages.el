@@ -2,6 +2,7 @@
 
 (require 'ai-clojure)
 (require 'ai-go)
+(require 'ai-js)
 (require 'ai-puppet)
 (require 'ai-markdown)
 (require 'ai-terraform)
