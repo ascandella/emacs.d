@@ -12,4 +12,14 @@
 (use-package ag
   :ensure t)
 
+(setq
+ projectile-globally-ignored-directories
+ (append projectile-globally-ignored-directories
+	 '(
+	   "go-build"
+	   "Godeps"
+	   "vendor"
+	   ))
+ )
+
 (provide 'ai-projectile)

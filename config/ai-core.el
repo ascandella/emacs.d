@@ -9,6 +9,9 @@
  backup-by-copying-when-linked t
  )
 
+;; auto reload stuff from disk
+(global-auto-revert-mode t)
+
 (defun display-startup-echo-area-message ())
 
 (fset 'yes-or-no-p 'y-or-n-p)
