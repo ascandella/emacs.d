@@ -1,5 +1,3 @@
-(use-package jdee
-  :mode "\\.java\\'"
-  :interpreter "jdee")
+; nothing to see here
 
 (provide 'ai-java)
