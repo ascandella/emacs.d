@@ -4,8 +4,9 @@
 (require 'ai-go)
 (require 'ai-java)
 (require 'ai-js)
-(require 'ai-puppet)
 (require 'ai-markdown)
+(require 'ai-puppet)
+(require 'ai-shell)
 (require 'ai-terraform)
 (require 'go-tmpl)
 
