@@ -3,6 +3,7 @@
  make-backup-files nil
  inhibit-startup-screen t
  inhibit-startup-echo-area-message t
+ initial-scratch-message nil
  require-final-newline t
  vc-follow-symlinks t
  backup-directory-alist `(("." . "~/.saves"))
