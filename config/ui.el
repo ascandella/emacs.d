@@ -23,6 +23,11 @@
   (scroll-bar-mode -1)
   (set-default-font "Menlo-14"))
 
+(use-package powerline
+  :ensure t
+  :config
+  (powerline-vim-theme))
+
 ;; (global-linum-mode)
 
 (show-paren-mode 1)
