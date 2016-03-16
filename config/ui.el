@@ -26,7 +26,7 @@
 (use-package powerline
   :ensure t
   :config
-  (powerline-vim-theme))
+  (powerline-center-theme))
 
 ;; (global-linum-mode)
 
