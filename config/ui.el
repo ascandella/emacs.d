@@ -1,7 +1,8 @@
-(use-package monokai-theme
+;; formerly monokai. trying out tango-dark. misterioso also good
+(use-package tangotango-theme
   :ensure t
   :config
-  (load-theme 'monokai t))
+  (load-theme 'tangotango t))
 
 ;; (load-theme 'lush t)
 
