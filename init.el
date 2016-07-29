@@ -16,7 +16,6 @@
     (require 'ai-keys)
     (require 'ai-git) ;; needs to come after keys so we load evil later
     (require 'ai-kwm)
-    (require 'ai-mail)
     (require 'smart-beginning-of-line)
     (require 'ai-mouse)
     (require 'ui)
