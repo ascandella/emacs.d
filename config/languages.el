@@ -4,6 +4,7 @@
 (require 'ai-go)
 (require 'ai-java)
 (require 'ai-js)
+(require 'ai-kwmrc)
 (require 'ai-markdown)
 (require 'ai-puppet)
 (require 'ai-shell)
