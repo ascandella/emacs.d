@@ -6,10 +6,13 @@
     (when (>= emacs-major-version 24)
     (require 'package)
     (add-to-list
-    'package-archives
-    '("melpa" . "http://melpa.org/packages/")
-    t)
+      'package-archives
+      '("melpa" . "http://melpa.org/packages/"))
     (package-initialize))
+
+    (unless (package-installed-p 'use-package)
+      (package-refresh-contents)
+      (package-install 'use-package))
 
     (add-to-list 'load-path' "~/.emacs.d/config")
     (require 'ai-core)
